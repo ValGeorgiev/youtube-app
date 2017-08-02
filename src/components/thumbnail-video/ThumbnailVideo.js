@@ -6,9 +6,9 @@ class ThumbnailVideo extends Component {
   render () {
     let { video, onClickVideo } = this.props
     return (
-    	<div key={video.id} onClick={() => onClickVideo(video.id)} className='thumbnail-video'>
+	  <div key={video.id} onClick={() => onClickVideo(video.id)} className='thumbnail-video'>
         <img src={video.thumbnails.medium.url} alt={video.title} />
-          <span>{video.title}</span>
+        <span>{video.title}</span>
       </div>
     );
   }

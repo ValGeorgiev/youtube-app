@@ -89,10 +89,10 @@ class VideoWrapper extends Component {
 
     return (
       <div className="video-wrapper">
-   		 <SelectedVideo video={selectedVideo} />
-         <div className='others-wrapper'>
-   		 	 {this.createOtherVideos()}
-   		 </div>
+   		  <SelectedVideo video={selectedVideo} />
+        <div className='others-wrapper'>
+   		 	  {this.createOtherVideos()}
+   		  </div>
       </div>
     );
   }
