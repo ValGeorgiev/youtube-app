@@ -1,0 +1,14 @@
+.thumbnail-video {
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+.thumbnail-video img { 
+	display: block;
+	margin-bottom: 10px;
+}
+.thumbnail-video span { 
+	width: 320px;
+	font-size: 17px;
+	display: inline-block;
+}

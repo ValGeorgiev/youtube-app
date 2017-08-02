@@ -1,0 +1,15 @@
+.selected-video-wrapper {
+	display: inline-block;
+	width: 70%;
+	text-align: center;
+	float: left;
+}
+
+.selected-video-wrapper iframe {
+	width: 850px;
+	height: 550px;
+}
+
+.video-description p {
+	padding: 0 100px ;
+}
