@@ -1,26 +1,29 @@
 import React, { Component } from 'react';
-import SelectedVideo from './selected-video/SelectedVideo'
+import VideoWrapper from './video-wrapper/VideoWrapper'
 
 
 class Video extends Component {
-  constructor() {
-  	super()
+  constructor(props) {
+  	super(props)
 
   	this.state = {
-  		selectedVideo: {}
-  	}
+      searchPhrase: props.match.params.id
+    }
   }
 
-  componentWillMount() {
-    console.log(this.props)
+  componentWillReceiveProps(nextProps) {
+    this.state = {
+  		searchPhrase: nextProps.match.params.id
+  	}  
   }
-
+ 
   render() {
-  	let { selectedVideo } = this.state
+
+  	let { searchPhrase } = this.state
 
     return (
       <div className="video-wrapper">
-      	<SelectedVideo video={selectedVideo} />
+      	<VideoWrapper phrase={searchPhrase} />
       </div>
     );
   }
