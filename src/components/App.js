@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div className="wrapper">
       	<SearchBar searchVideos={(event) => this.search(event)} />
-     	<VideoWrapper phrase={searchPhrase} />
+       	<VideoWrapper phrase={searchPhrase} />
       </div>
     );
   }
