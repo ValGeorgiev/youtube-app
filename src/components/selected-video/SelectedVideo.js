@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import '../../style/selected-video.css'
 
 const YOUTUBE_LINK = 'https://www.youtube.com/embed/'
@@ -17,6 +18,14 @@ class SelectedVideo extends Component {
       </div>
     ) : null;
   }
+}
+
+SelectedVideo.propTypes = {
+  video: PropTypes.shape({
+    title: PropTypes.string,
+    description: PropTypes.string,
+    id: PropTypes.string
+  })
 }
 
 export default SelectedVideo;

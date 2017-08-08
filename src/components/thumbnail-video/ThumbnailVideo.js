@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import '../../style/thumbnail-video.css'
 
 class ThumbnailVideo extends Component {
@@ -12,6 +13,15 @@ class ThumbnailVideo extends Component {
       </div>
     );
   }
+}
+
+ThumbnailVideo.propTypes = {
+  video: PropTypes.shape({
+    title: PropTypes.string,
+    thumbnails: PropTypes.object,
+    id: PropTypes.string
+  }),
+  onClickVideo: PropTypes.func
 }
 
 export default ThumbnailVideo;

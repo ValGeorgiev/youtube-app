@@ -1,0 +1,41 @@
+.header-wrapper h1 {
+	float: left;
+	margin-left: 10px;
+}
+
+.header-wrapper {
+	height: 85px;
+	background: #F57366;
+	margin-bottom: 10px;
+}
+
+.header-wrapper .buttons-wrapper {
+	float: right;
+	margin-right: 15px;
+	height: 85px;
+	line-height: 85px;
+}
+
+.header-wrapper .buttons-wrapper button {
+	height: 40px;
+	width: 100px;
+	margin: 0 10px;
+	border-radius: 5px;
+	border: 0;
+	box-shadow: 0 0 15px silver;
+	font-size: 19px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.header-wrapper .nav {
+	text-align: center;
+	padding-top: 65px;
+}
+
+.header-wrapper .nav a {	
+    font-size: 17px;
+    padding: 5px;
+    margin: 0 10px;
+    color: black;
+}
